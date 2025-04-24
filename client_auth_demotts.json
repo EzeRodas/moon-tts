@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "moon-tts",
+  "private_key_id": "741eed562884e1519cc0d156c92e888b82a100af",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC1TqIN6ihJXTSR\ngjB0CbDnc13sVMAfyKDCsagfB7dlTTA80U5hJuujFjVrWeumcb/1B3DI3teyLM6D\nFPIilsR0w4mKHhO1HHPjrqgR0XaVAYfuvYRCMI+3BCTt8w1v8EJTM9S09XN9PWYS\niLKWPb+sn0RbUp066hLjnLpr66bZyoJ+Vc6u0o0kQC3mHZPD+GD7wF2MXjsFP5AQ\nMLMlGo11qz1ZX01t2bEW6c0SV2TPqN9c1civ4SwvURvmuX6Vua73+nkrRNBZh1Ds\n/TTh4maWMRhpPFZIKvvUVOzrsp8UyV9tjNAcJIVzRHqEN7pEyK7eTEslhPIcyBzq\nEw7OQNspAgMBAAECggEAF+gV6zLIfB/7mgIqJGrQtjwaktp7+NTqCbIGQo0wa/2Z\nEjPhG2NX58m6YnzZWzmdf5ArGXl0xIwu8M7WvKPXpLPR03Hy1Es7prZ1d+AAPFaW\n126K3XVsxcuYmP2W9H8gJ7tqXTAOOeHaLzByJ+hdeUQI7ee/TrDlq7iTRj6s4gOe\nj0HpquL/0j0xI5e04cO2RCA2jIZmxDTbhDnJlAA2GDeU6E2sbrcfSEfJn73qbpA0\n2wMdbJ4sqo7yfl/4XzJV6gAuJblugDLHnRDwPZiLnuQmrGbaC7vwcGZbNYUqIzqz\n3lsTpY1QUCPvreU2anbq+H/ME/6dZJXmxCqGZqln+QKBgQDYyLtr6IRXksYYgetv\nCIEk7gOxR+jcUyr0gC4hRNttC4ONWv2iBExXljaQ7j5lWGvJmdOQz6bmXCG8u50o\ndwaAPr4DApT9bzKXavDJGOV39pOdRGYB5j3+TbwOeOkaLdvUdiziqJBJ7reiHzaj\n1eJoRwE+d32id/hr1M9xJeectQKBgQDWGvbNOKp38x5qCPE1FfsIc943rFaU2JLn\nsevLXll1wAf8T0xkZ9yniVkxso+FNMWgbXBwJAU09jKkyoz9s2ELm80sO93HlIPs\nCYFEBy0YWfmJhmecEjx/UL7yr4GdqA3+WhmViXkC90sRyDwTWNWN/QubPS7ki5th\nGE6LmJCBJQKBgHYE+jwqDvqaNmybNnBxYdWYGryGGJjyUj1gFz0XfpokHY90TQbK\nbkF0zuoiOif0dmH/8/Uvh358BAX64floq0pgXhPHcRN0WUej+ciRXEPuIrkIxrwb\n+/4ZldsPKmCNPNOzLoaLHFqTsrd5ZMbXJ3Z7yYqXhPdRdxZFelXwO+LNAoGAG0g+\nULI6zqQVKQ/QpKITZeVV2KRGOBtMxOdgE38HSUDaA6WbJ2QwssyGqBWHwkKSODoZ\nzMBaRYBlvaftxVo5MIB+6XcLcKYVFVu0tBVyAptcd9C/nRyZxuNkIYqJqqxCdDnI\n7swgtmcKks6AETsNo1UuSG7Ibej4OKwfPhyHtV0CgYAzg0lMioROm6zNg7A1Q/U4\n45gYLPW4S2vtomRoV79bFzRRQnlx8MJMVNeZmBLVgxBKh9aygDxfar1zed8mBj8A\ne4EFv5yMfxeUpA9+DERtCIANe5YlO7x4UuRcxa7Du6dyIL4jlifsghhyTQ0AMYz8\nWqSijp9csM7O0dWp4Y5JXg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "moon-tts-demo@moon-tts.iam.gserviceaccount.com",
+  "client_id": "114190194983080773604",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/moon-tts-demo%40moon-tts.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
