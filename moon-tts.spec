@@ -5,7 +5,7 @@ a = Analysis(
     ['moon-tts.py'],
     pathex=[],
     binaries=[],
-    datas=[('icon.ico', '.'), ('usage.json', '.'), ('client_auth_moontts.json', '.'), ('banner.png', '.')],
+    datas=[('icon.ico', '.'), ('client_auth_moontts.json', '.'), ('usage.json', '.'), ('banner.png', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

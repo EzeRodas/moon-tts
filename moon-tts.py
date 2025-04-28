@@ -14,8 +14,6 @@ from google.cloud import texttospeech
 
 # Interface
 
-
-
 def resource_path(relative_path):
     """ Get absolute path to resource, works for dev and for PyInstaller EXE """
     try:
@@ -56,27 +54,41 @@ output_path = os.path.join(get_appdata_folder(), "output.wav")
 usage_file_path = os.path.join(get_appdata_folder(), "usage.json")
 
 
+# --- Constants ---
+USAGE_FILE = usage_file_path
+CHARACTER_LIMIT = 5000
+CHARACTER_LIMIT_PER_MONTH = 1000000
+
 def load_usage():
-    settings_path = os.path.join(get_appdata_folder(), "usage.json")
-
-    if os.path.exists(settings_path):
+    if os.path.exists(USAGE_FILE):
         try:
-            with open(settings_path, "r") as f:
+            with open(USAGE_FILE, "r") as f:
                 data = json.load(f)
-                # ... your normal load logic here ...
-                return (characters_used, last_selected_device, last_monitor_device, monitor_enabled)
+                saved_month = data.get("month")
+                current_month = datetime.now().strftime("%Y-%m")
 
+                if saved_month != current_month:
+                    print("New month detected. Resetting character usage.")
+                    return 0, None, None, True
+                else:
+                    return (
+                        data.get("characters_used", 0),
+                        data.get("last_selected_device", None),
+                        data.get("last_monitor_device", None),
+                        data.get("monitor_enabled", True)
+                    )
         except json.JSONDecodeError:
             print("[Warning] usage.json is corrupted. Saving backup and resetting...")
-
             # Create backup file
             backup_path = os.path.join(get_appdata_folder(), "usage_corrupted.json")
-            shutil.move(settings_path, backup_path)
-
+            shutil.move(usage_file_path, backup_path)
+            
             return 0, None, None, True
-
-    # If no file at all
+        
     return 0, None, None, True
+
+
+
 
 def save_usage(characters_used, last_selected_device, last_monitor_device, monitor_enabled):
     current_month = datetime.now().strftime("%Y-%m")
@@ -98,11 +110,6 @@ def on_device_selected(event=None):
     )
 
 
-
-# --- Constants ---
-USAGE_FILE = usage_file_path
-CHARACTER_LIMIT = 5000
-CHARACTER_LIMIT_PER_MONTH = 1000000
 
 # --- Initialize Usage ---
 characters_used, last_selected_device, last_monitor_device, monitoring_state = load_usage()
