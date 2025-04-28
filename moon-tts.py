@@ -25,7 +25,7 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 root = ctk.CTk(fg_color='#E1DEE8')
-root.title("Demo-TTS")
+root.title("Moon TTS")
 root.geometry("400x500")
 root.grid_columnconfigure(0, weight=1)
 root.grid_rowconfigure(0, weight=1)
