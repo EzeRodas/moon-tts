@@ -44,7 +44,11 @@ frame_1.grid_propagate(0)
 
 
 def get_appdata_folder():
-    appdata = os.getenv("APPDATA")
+    if sys.platform == "win32":
+        appdata = os.getenv("APPDATA")
+    else:
+        appdata = os.path.expanduser("~/.config")
+    
     app_folder = os.path.join(appdata, "MoonTTS")
     if not os.path.exists(app_folder):
         os.makedirs(app_folder)
