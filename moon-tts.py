@@ -11,7 +11,20 @@ import sounddevice as sd
 import soundfile as sf
 from google.cloud import texttospeech
 
+
 # Interface
+
+
+
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller EXE """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 root = ctk.CTk(fg_color='#E1DEE8')
 root.title("Demo-TTS")
@@ -19,7 +32,7 @@ root.geometry("400x500")
 root.grid_columnconfigure(0, weight=1)
 root.grid_rowconfigure(0, weight=1)
 root.resizable(False, False)
-root.iconbitmap("icon.ico")
+root.iconbitmap(resource_path("icon.ico"))
 
 frame_1 = ctk.CTkFrame(root, width=400, height=500)
 
@@ -28,34 +41,41 @@ frame_1.grid(sticky="nswe")
 frame_1.grid_columnconfigure((0, 1), weight=1)
 frame_1.grid_propagate(0)
 
-# --- Constants ---
-USAGE_FILE = "usage.json"
-CHARACTER_LIMIT = 5000
-CHARACTER_LIMIT_PER_MONTH = 1000000
 
 # --- Usage Functions ---
-def load_usage():
-    if os.path.exists(USAGE_FILE):
-        try:
-            with open(USAGE_FILE, "r") as f:
-                data = json.load(f)
-                saved_month = data.get("month")
-                current_month = datetime.now().strftime("%Y-%m")
 
-                if saved_month != current_month:
-                    print("New month detected. Resetting character usage.")
-                    return 0, None, None, True
-                else:
-                    return (
-                        data.get("characters_used", 0),
-                        data.get("last_selected_device", None),
-                        data.get("last_monitor_device", None),
-                        data.get("monitor_enabled", True)
-                    )
+
+def get_appdata_folder():
+    appdata = os.getenv("APPDATA")
+    app_folder = os.path.join(appdata, "MoonTTS")
+    if not os.path.exists(app_folder):
+        os.makedirs(app_folder)
+    return app_folder
+
+output_path = os.path.join(get_appdata_folder(), "output.wav")
+usage_file_path = os.path.join(get_appdata_folder(), "usage.json")
+
+
+def load_usage():
+    settings_path = os.path.join(get_appdata_folder(), "usage.json")
+
+    if os.path.exists(settings_path):
+        try:
+            with open(settings_path, "r") as f:
+                data = json.load(f)
+                # ... your normal load logic here ...
+                return (characters_used, last_selected_device, last_monitor_device, monitor_enabled)
+
         except json.JSONDecodeError:
             print("[Warning] usage.json is corrupted. Saving backup and resetting...")
-            shutil.move(USAGE_FILE, USAGE_FILE.replace(".json", "_corrupted.json"))
+
+            # Create backup file
+            backup_path = os.path.join(get_appdata_folder(), "usage_corrupted.json")
+            shutil.move(settings_path, backup_path)
+
             return 0, None, None, True
+
+    # If no file at all
     return 0, None, None, True
 
 def save_usage(characters_used, last_selected_device, last_monitor_device, monitor_enabled):
@@ -77,13 +97,20 @@ def on_device_selected(event=None):
         monitor_enabled.get()
     )
 
+
+
+# --- Constants ---
+USAGE_FILE = usage_file_path
+CHARACTER_LIMIT = 5000
+CHARACTER_LIMIT_PER_MONTH = 1000000
+
 # --- Initialize Usage ---
 characters_used, last_selected_device, last_monitor_device, monitoring_state = load_usage()
 
 # --- TTS Function ---
 def text_to_speech(text):
     try:
-        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "F:\\Documents\\Programming\\Proyects\\Moon-TTS\\client_auth_moontts.json"
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = resource_path("F:\\Documents\\Programming\\Proyects\\Moon-TTS\\client_auth_moontts.json")
         client = texttospeech.TextToSpeechClient()
 
         input_text = texttospeech.SynthesisInput(text=text)
@@ -99,20 +126,20 @@ def text_to_speech(text):
             audio_config=audio_config,
         )
 
-        with open("output.wav", "wb") as out:
+        with open(output_path, "wb") as out:
             out.write(response.audio_content)
 
 
         if monitor_enabled.get() and monitor_device.get() in device_indices:
             device_index = device_indices.get(selected_device.get(), None)
             monitor_index = device_indices.get(monitor_device.get(), None)
-            data, fs = sf.read('output.wav', dtype='float32')
+            data, fs = sf.read(output_path, dtype='float32')
             sd.play(data, fs, device=device_index)
             sd.play(data, fs, device=monitor_index)
             sd.wait()
         else:
             device_index = device_indices.get(selected_device.get(), None)
-            data, fs = sf.read('output.wav', dtype='float32')
+            data, fs = sf.read(output_path, dtype='float32')
             sd.play(data, fs, device=device_index)
             sd.wait()
 
@@ -169,7 +196,7 @@ ctk.set_default_color_theme("blue")  # Theme
 
 # Title
 
-banner = ctk.CTkImage(light_image=Image.open("banner.png"), size=(400, 90))
+banner = ctk.CTkImage(light_image=Image.open(resource_path("banner.png")), size=(400, 90))
 banner_label = ctk.CTkLabel(frame_1, text="", image=banner, width=400, height=90)
 banner_label.grid()
 
