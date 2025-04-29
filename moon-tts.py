@@ -115,6 +115,11 @@ def on_device_selected(event=None):
 characters_used, last_selected_device, last_monitor_device, monitoring_state = load_usage()
 
 # --- TTS Function ---
+
+def play_on_device(device_idx, data, fs):
+    sd.play(data, fs, device=device_idx)
+    sd.wait()
+
 def text_to_speech(text):
     try:
         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = resource_path("F:\\Documents\\Programming\\Proyects\\Moon-TTS\\client_auth_moontts.json")
@@ -137,19 +142,16 @@ def text_to_speech(text):
             out.write(response.audio_content)
 
 
-        if monitor_enabled.get() and monitor_device.get() in device_indices:
-            device_index = device_indices.get(selected_device.get(), None)
-            monitor_index = device_indices.get(monitor_device.get(), None)
-            data, fs = sf.read(output_path, dtype='float32')
-            sd.play(data, fs, device=device_index)
-            sd.play(data, fs, device=monitor_index)
-            sd.wait()
-        else:
-            device_index = device_indices.get(selected_device.get(), None)
-            data, fs = sf.read(output_path, dtype='float32')
-            sd.play(data, fs, device=device_index)
-            sd.wait()
+        data, fs = sf.read(output_path, dtype='float32')
 
+        # Main device
+        device_index = device_indices.get(selected_device.get(), None)
+        threading.Thread(target=play_on_device, args=(device_index, data, fs), daemon=True).start()
+
+        # Monitor device
+        if monitor_enabled.get() and monitor_device.get() in device_indices:
+            monitor_index = device_indices.get(monitor_device.get(), None)
+            threading.Thread(target=play_on_device, args=(monitor_index, data, fs), daemon=True).start()
 
     except Exception as e:
         print(f"Error: {e}")
