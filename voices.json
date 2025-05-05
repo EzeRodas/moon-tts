@@ -1,134 +1,4 @@
 {
-  "German": {
-    "code": "de-DE",
-    "voices": {
-      "Aoede": "de-DE-Chirp3-HD-Aoede",
-      "Kore": "de-DE-Chirp3-HD-Kore",
-      "Leda": "de-DE-Chirp3-HD-Leda",
-      "Zephyr": "de-DE-Chirp3-HD-Zephyr",
-      "Puck": "de-DE-Chirp3-HD-Puck",
-      "Charon": "de-DE-Chirp3-HD-Charon",
-      "Fenrir": "de-DE-Chirp3-HD-Fenrir",
-      "Orus": "de-DE-Chirp3-HD-Orus"
-    }
-  },
-  "English-AU": {
-    "code": "en-AU",
-    "voices": {
-      "Aoede": "en-AU-Chirp3-HD-Aoede",
-      "Kore": "en-AU-Chirp3-HD-Kore",
-      "Leda": "en-AU-Chirp3-HD-Leda",
-      "Zephyr": "en-AU-Chirp3-HD-Zephyr",
-      "Puck": "en-AU-Chirp3-HD-Puck",
-      "Charon": "en-AU-Chirp3-HD-Charon",
-      "Fenrir": "en-AU-Chirp3-HD-Fenrir",
-      "Orus": "en-AU-Chirp3-HD-Orus"
-    }
-  },
-  "English-UK": {
-    "code": "en-GB",
-    "voices": {
-      "Aoede": "en-GB-Chirp3-HD-Aoede",
-      "Kore": "en-GB-Chirp3-HD-Kore",
-      "Leda": "en-GB-Chirp3-HD-Leda",
-      "Zephyr": "en-GB-Chirp3-HD-Zephyr",
-      "Puck": "en-GB-Chirp3-HD-Puck",
-      "Charon": "en-GB-Chirp3-HD-Charon",
-      "Fenrir": "en-GB-Chirp3-HD-Fenrir",
-      "Orus": "en-GB-Chirp3-HD-Orus"
-    }
-  },
-  "English-IN": {
-    "code": "en-IN",
-    "voices": {
-      "Aoede": "en-IN-Chirp3-HD-Aoede",
-      "Kore": "en-IN-Chirp3-HD-Kore",
-      "Leda": "en-IN-Chirp3-HD-Leda",
-      "Zephyr": "en-IN-Chirp3-HD-Zephyr",
-      "Puck": "en-IN-Chirp3-HD-Puck",
-      "Charon": "en-IN-Chirp3-HD-Charon",
-      "Fenrir": "en-IN-Chirp3-HD-Fenrir",
-      "Orus": "en-IN-Chirp3-HD-Orus"
-    }
-  },
-  "Spanish-MX": {
-    "code": "es-US",
-    "voices": {
-      "Aoede": "es-US-Chirp3-HD-Aoede",
-      "Kore": "es-US-Chirp3-HD-Kore",
-      "Leda": "es-US-Chirp3-HD-Leda",
-      "Zephyr": "es-US-Chirp3-HD-Zephyr",
-      "Puck": "es-US-Chirp3-HD-Puck",
-      "Charon": "es-US-Chirp3-HD-Charon",
-      "Fenrir": "es-US-Chirp3-HD-Fenrir",
-      "Orus": "es-US-Chirp3-HD-Orus"
-    }
-  },
-  "Spanish-ES": {
-    "code": "es-ES",
-    "voices": {
-      "Aoede": "es-ES-Chirp3-HD-Aoede",
-      "Kore": "es-ES-Chirp3-HD-Kore",
-      "Leda": "es-ES-Chirp3-HD-Leda",
-      "Zephyr": "es-ES-Chirp3-HD-Zephyr",
-      "Puck": "es-ES-Chirp3-HD-Puck",
-      "Charon": "es-ES-Chirp3-HD-Charon",
-      "Fenrir": "es-ES-Chirp3-HD-Fenrir",
-      "Orus": "es-ES-Chirp3-HD-Orus"
-    }
-  },
-  "French": {
-    "code": "fr-FR",
-    "voices": {
-      "Aoede": "fr-FR-Chirp3-HD-Aoede",
-      "Kore": "fr-FR-Chirp3-HD-Kore",
-      "Leda": "fr-FR-Chirp3-HD-Leda",
-      "Zephyr": "fr-FR-Chirp3-HD-Zephyr",
-      "Puck": "fr-FR-Chirp3-HD-Puck",
-      "Charon": "fr-FR-Chirp3-HD-Charon",
-      "Fenrir": "fr-FR-Chirp3-HD-Fenrir",
-      "Orus": "fr-FR-Chirp3-HD-Orus"
-    }
-  },
-  "French-CA": {
-    "code": "fr-CA",
-    "voices": {
-      "Aoede": "fr-CA-Chirp3-HD-Aoede",
-      "Kore": "fr-CA-Chirp3-HD-Kore",
-      "Leda": "fr-CA-Chirp3-HD-Leda",
-      "Zephyr": "fr-CA-Chirp3-HD-Zephyr",
-      "Puck": "fr-CA-Chirp3-HD-Puck",
-      "Charon": "fr-CA-Chirp3-HD-Charon",
-      "Fenrir": "fr-CA-Chirp3-HD-Fenrir",
-      "Orus": "fr-CA-Chirp3-HD-Orus"
-    }
-  },
-  "Hindi": {
-    "code": "hi-IN",
-    "voices": {
-      "Aoede": "hi-IN-Chirp3-HD-Aoede",
-      "Kore": "hi-IN-Chirp3-HD-Kore",
-      "Leda": "hi-IN-Chirp3-HD-Leda",
-      "Zephyr": "hi-IN-Chirp3-HD-Zephyr",
-      "Puck": "hi-IN-Chirp3-HD-Puck",
-      "Charon": "hi-IN-Chirp3-HD-Charon",
-      "Fenrir": "hi-IN-Chirp3-HD-Fenrir",
-      "Orus": "hi-IN-Chirp3-HD-Orus"
-    }
-  },
-  "Portuguese": {
-    "code": "pt-BR",
-    "voices": {
-      "Aoede": "pt-BR-Chirp3-HD-Aoede",
-      "Kore": "pt-BR-Chirp3-HD-Kore",
-      "Leda": "pt-BR-Chirp3-HD-Leda",
-      "Zephyr": "pt-BR-Chirp3-HD-Zephyr",
-      "Puck": "pt-BR-Chirp3-HD-Puck",
-      "Charon": "pt-BR-Chirp3-HD-Charon",
-      "Fenrir": "pt-BR-Chirp3-HD-Fenrir",
-      "Orus": "pt-BR-Chirp3-HD-Orus"
-    }
-  },
   "Arabic": {
     "code": "ar-XA",
     "voices": {
@@ -136,75 +6,10 @@
       "Kore": "ar-XA-Chirp3-HD-Kore",
       "Leda": "ar-XA-Chirp3-HD-Leda",
       "Zephyr": "ar-XA-Chirp3-HD-Zephyr",
-      "Puck": "ar-XA-Chirp3-HD-Puck",
       "Charon": "ar-XA-Chirp3-HD-Charon",
       "Fenrir": "ar-XA-Chirp3-HD-Fenrir",
-      "Orus": "ar-XA-Chirp3-HD-Orus"
-    }
-  },
-  "Indonesian": {
-    "code": "id-ID",
-    "voices": {
-      "Aoede": "id-ID-Chirp3-HD-Aoede",
-      "Kore": "id-ID-Chirp3-HD-Kore",
-      "Leda": "id-ID-Chirp3-HD-Leda",
-      "Zephyr": "id-ID-Chirp3-HD-Zephyr",
-      "Puck": "id-ID-Chirp3-HD-Puck",
-      "Charon": "id-ID-Chirp3-HD-Charon",
-      "Fenrir": "id-ID-Chirp3-HD-Fenrir",
-      "Orus": "id-ID-Chirp3-HD-Orus"
-    }
-  },
-  "Italian": {
-    "code": "it-IT",
-    "voices": {
-      "Aoede": "it-IT-Chirp3-HD-Aoede",
-      "Kore": "it-IT-Chirp3-HD-Kore",
-      "Leda": "it-IT-Chirp3-HD-Leda",
-      "Zephyr": "it-IT-Chirp3-HD-Zephyr",
-      "Puck": "it-IT-Chirp3-HD-Puck",
-      "Charon": "it-IT-Chirp3-HD-Charon",
-      "Fenrir": "it-IT-Chirp3-HD-Fenrir",
-      "Orus": "it-IT-Chirp3-HD-Orus"
-    }
-  },
-  "Japanese": {
-    "code": "ja-JP",
-    "voices": {
-      "Aoede": "ja-JP-Chirp3-HD-Aoede",
-      "Kore": "ja-JP-Chirp3-HD-Kore",
-      "Leda": "ja-JP-Chirp3-HD-Leda",
-      "Zephyr": "ja-JP-Chirp3-HD-Zephyr",
-      "Puck": "ja-JP-Chirp3-HD-Puck",
-      "Charon": "ja-JP-Chirp3-HD-Charon",
-      "Fenrir": "ja-JP-Chirp3-HD-Fenrir",
-      "Orus": "ja-JP-Chirp3-HD-Orus"
-    }
-  },
-  "Turkish": {
-    "code": "tr-TR",
-    "voices": {
-      "Aoede": "tr-TR-Chirp3-HD-Aoede",
-      "Kore": "tr-TR-Chirp3-HD-Kore",
-      "Leda": "tr-TR-Chirp3-HD-Leda",
-      "Zephyr": "tr-TR-Chirp3-HD-Zephyr",
-      "Puck": "tr-TR-Chirp3-HD-Puck",
-      "Charon": "tr-TR-Chirp3-HD-Charon",
-      "Fenrir": "tr-TR-Chirp3-HD-Fenrir",
-      "Orus": "tr-TR-Chirp3-HD-Orus"
-    }
-  },
-  "Vietnamese": {
-    "code": "vi-VN",
-    "voices": {
-      "Aoede": "vi-VN-Chirp3-HD-Aoede",
-      "Kore": "vi-VN-Chirp3-HD-Kore",
-      "Leda": "vi-VN-Chirp3-HD-Leda",
-      "Zephyr": "vi-VN-Chirp3-HD-Zephyr",
-      "Puck": "vi-VN-Chirp3-HD-Puck",
-      "Charon": "vi-VN-Chirp3-HD-Charon",
-      "Fenrir": "vi-VN-Chirp3-HD-Fenrir",
-      "Orus": "vi-VN-Chirp3-HD-Orus"
+      "Orus": "ar-XA-Chirp3-HD-Orus",
+      "Puck": "ar-XA-Chirp3-HD-Puck"
     }
   },
   "Bengali-IN": {
@@ -214,75 +19,10 @@
       "Kore": "bn-IN-Chirp3-HD-Kore",
       "Leda": "bn-IN-Chirp3-HD-Leda",
       "Zephyr": "bn-IN-Chirp3-HD-Zephyr",
-      "Puck": "bn-IN-Chirp3-HD-Puck",
       "Charon": "bn-IN-Chirp3-HD-Charon",
       "Fenrir": "bn-IN-Chirp3-HD-Fenrir",
-      "Orus": "bn-IN-Chirp3-HD-Orus"
-    }
-  },
-  "Gujarati-IN": {
-    "code": "gu-IN",
-    "voices": {
-      "Aoede": "gu-IN-Chirp3-HD-Aoede",
-      "Kore": "gu-IN-Chirp3-HD-Kore",
-      "Leda": "gu-IN-Chirp3-HD-Leda",
-      "Zephyr": "gu-IN-Chirp3-HD-Zephyr",
-      "Puck": "gu-IN-Chirp3-HD-Puck",
-      "Charon": "gu-IN-Chirp3-HD-Charon",
-      "Fenrir": "gu-IN-Chirp3-HD-Fenrir",
-      "Orus": "gu-IN-Chirp3-HD-Orus"
-    }
-  },
-  "Kannada-IN": {
-    "code": "kn-IN",
-    "voices": {
-      "Aoede": "kn-IN-Chirp3-HD-Aoede",
-      "Kore": "kn-IN-Chirp3-HD-Kore",
-      "Leda": "kn-IN-Chirp3-HD-Leda",
-      "Zephyr": "kn-IN-Chirp3-HD-Zephyr",
-      "Puck": "kn-IN-Chirp3-HD-Puck",
-      "Charon": "kn-IN-Chirp3-HD-Charon",
-      "Fenrir": "kn-IN-Chirp3-HD-Fenrir",
-      "Orus": "kn-IN-Chirp3-HD-Orus"
-    }
-  },
-  "Malayalam-IN": {
-    "code": "ml-IN",
-    "voices": {
-      "Aoede": "ml-IN-Chirp3-HD-Aoede",
-      "Kore": "ml-IN-Chirp3-HD-Kore",
-      "Leda": "ml-IN-Chirp3-HD-Leda",
-      "Zephyr": "ml-IN-Chirp3-HD-Zephyr",
-      "Puck": "ml-IN-Chirp3-HD-Puck",
-      "Charon": "ml-IN-Chirp3-HD-Charon",
-      "Fenrir": "ml-IN-Chirp3-HD-Fenrir",
-      "Orus": "ml-IN-Chirp3-HD-Orus"
-    }
-  },
-  "Tamil-IN": {
-    "code": "ta-IN",
-    "voices": {
-      "Aoede": "ta-IN-Chirp3-HD-Aoede",
-      "Kore": "ta-IN-Chirp3-HD-Kore",
-      "Leda": "ta-IN-Chirp3-HD-Leda",
-      "Zephyr": "ta-IN-Chirp3-HD-Zephyr",
-      "Puck": "ta-IN-Chirp3-HD-Puck",
-      "Charon": "ta-IN-Chirp3-HD-Charon",
-      "Fenrir": "ta-IN-Chirp3-HD-Fenrir",
-      "Orus": "ta-IN-Chirp3-HD-Orus"
-    }
-  },
-  "Telugu-IN": {
-    "code": "te-IN",
-    "voices": {
-      "Aoede": "te-IN-Chirp3-HD-Aoede",
-      "Kore": "te-IN-Chirp3-HD-Kore",
-      "Leda": "te-IN-Chirp3-HD-Leda",
-      "Zephyr": "te-IN-Chirp3-HD-Zephyr",
-      "Puck": "te-IN-Chirp3-HD-Puck",
-      "Charon": "te-IN-Chirp3-HD-Charon",
-      "Fenrir": "te-IN-Chirp3-HD-Fenrir",
-      "Orus": "te-IN-Chirp3-HD-Orus"
+      "Orus": "bn-IN-Chirp3-HD-Orus",
+      "Puck": "bn-IN-Chirp3-HD-Puck"
     }
   },
   "Dutch": {
@@ -292,10 +32,166 @@
       "Kore": "nl-NL-Chirp3-HD-Kore",
       "Leda": "nl-NL-Chirp3-HD-Leda",
       "Zephyr": "nl-NL-Chirp3-HD-Zephyr",
-      "Puck": "nl-NL-Chirp3-HD-Puck",
       "Charon": "nl-NL-Chirp3-HD-Charon",
       "Fenrir": "nl-NL-Chirp3-HD-Fenrir",
-      "Orus": "nl-NL-Chirp3-HD-Orus"
+      "Orus": "nl-NL-Chirp3-HD-Orus",
+      "Puck": "nl-NL-Chirp3-HD-Puck"
+    }
+  },
+  "English-AU": {
+    "code": "en-AU",
+    "voices": {
+      "Aoede": "en-AU-Chirp3-HD-Aoede",
+      "Kore": "en-AU-Chirp3-HD-Kore",
+      "Leda": "en-AU-Chirp3-HD-Leda",
+      "Zephyr": "en-AU-Chirp3-HD-Zephyr",
+      "Charon": "en-AU-Chirp3-HD-Charon",
+      "Fenrir": "en-AU-Chirp3-HD-Fenrir",
+      "Orus": "en-AU-Chirp3-HD-Orus",
+      "Puck": "en-AU-Chirp3-HD-Puck"
+    }
+  },
+  "English-IN": {
+    "code": "en-IN",
+    "voices": {
+      "Aoede": "en-IN-Chirp3-HD-Aoede",
+      "Kore": "en-IN-Chirp3-HD-Kore",
+      "Leda": "en-IN-Chirp3-HD-Leda",
+      "Zephyr": "en-IN-Chirp3-HD-Zephyr",
+      "Charon": "en-IN-Chirp3-HD-Charon",
+      "Fenrir": "en-IN-Chirp3-HD-Fenrir",
+      "Orus": "en-IN-Chirp3-HD-Orus",
+      "Puck": "en-IN-Chirp3-HD-Puck"
+    }
+  },
+  "English-UK": {
+    "code": "en-GB",
+    "voices": {
+      "Aoede": "en-GB-Chirp3-HD-Aoede",
+      "Kore": "en-GB-Chirp3-HD-Kore",
+      "Leda": "en-GB-Chirp3-HD-Leda",
+      "Zephyr": "en-GB-Chirp3-HD-Zephyr",
+      "Charon": "en-GB-Chirp3-HD-Charon",
+      "Fenrir": "en-GB-Chirp3-HD-Fenrir",
+      "Orus": "en-GB-Chirp3-HD-Orus",
+      "Puck": "en-GB-Chirp3-HD-Puck"
+    }
+  },
+  "French": {
+    "code": "fr-FR",
+    "voices": {
+      "Aoede": "fr-FR-Chirp3-HD-Aoede",
+      "Kore": "fr-FR-Chirp3-HD-Kore",
+      "Leda": "fr-FR-Chirp3-HD-Leda",
+      "Zephyr": "fr-FR-Chirp3-HD-Zephyr",
+      "Charon": "fr-FR-Chirp3-HD-Charon",
+      "Fenrir": "fr-FR-Chirp3-HD-Fenrir",
+      "Orus": "fr-FR-Chirp3-HD-Orus",
+      "Puck": "fr-FR-Chirp3-HD-Puck"
+    }
+  },
+  "French-CA": {
+    "code": "fr-CA",
+    "voices": {
+      "Aoede": "fr-CA-Chirp3-HD-Aoede",
+      "Kore": "fr-CA-Chirp3-HD-Kore",
+      "Leda": "fr-CA-Chirp3-HD-Leda",
+      "Zephyr": "fr-CA-Chirp3-HD-Zephyr",
+      "Charon": "fr-CA-Chirp3-HD-Charon",
+      "Fenrir": "fr-CA-Chirp3-HD-Fenrir",
+      "Orus": "fr-CA-Chirp3-HD-Orus",
+      "Puck": "fr-CA-Chirp3-HD-Puck"
+    }
+  },
+  "German": {
+    "code": "de-DE",
+    "voices": {
+      "Aoede": "de-DE-Chirp3-HD-Aoede",
+      "Kore": "de-DE-Chirp3-HD-Kore",
+      "Leda": "de-DE-Chirp3-HD-Leda",
+      "Zephyr": "de-DE-Chirp3-HD-Zephyr",
+      "Charon": "de-DE-Chirp3-HD-Charon",
+      "Fenrir": "de-DE-Chirp3-HD-Fenrir",
+      "Orus": "de-DE-Chirp3-HD-Orus",
+      "Puck": "de-DE-Chirp3-HD-Puck"
+    }
+  },
+  "Gujarati-IN": {
+    "code": "gu-IN",
+    "voices": {
+      "Aoede": "gu-IN-Chirp3-HD-Aoede",
+      "Kore": "gu-IN-Chirp3-HD-Kore",
+      "Leda": "gu-IN-Chirp3-HD-Leda",
+      "Zephyr": "gu-IN-Chirp3-HD-Zephyr",
+      "Charon": "gu-IN-Chirp3-HD-Charon",
+      "Fenrir": "gu-IN-Chirp3-HD-Fenrir",
+      "Orus": "gu-IN-Chirp3-HD-Orus",
+      "Puck": "gu-IN-Chirp3-HD-Puck"
+    }
+  },
+  "Hindi": {
+    "code": "hi-IN",
+    "voices": {
+      "Aoede": "hi-IN-Chirp3-HD-Aoede",
+      "Kore": "hi-IN-Chirp3-HD-Kore",
+      "Leda": "hi-IN-Chirp3-HD-Leda",
+      "Zephyr": "hi-IN-Chirp3-HD-Zephyr",
+      "Charon": "hi-IN-Chirp3-HD-Charon",
+      "Fenrir": "hi-IN-Chirp3-HD-Fenrir",
+      "Orus": "hi-IN-Chirp3-HD-Orus",
+      "Puck": "hi-IN-Chirp3-HD-Puck"
+    }
+  },
+  "Indonesian": {
+    "code": "id-ID",
+    "voices": {
+      "Aoede": "id-ID-Chirp3-HD-Aoede",
+      "Kore": "id-ID-Chirp3-HD-Kore",
+      "Leda": "id-ID-Chirp3-HD-Leda",
+      "Zephyr": "id-ID-Chirp3-HD-Zephyr",
+      "Charon": "id-ID-Chirp3-HD-Charon",
+      "Fenrir": "id-ID-Chirp3-HD-Fenrir",
+      "Orus": "id-ID-Chirp3-HD-Orus",
+      "Puck": "id-ID-Chirp3-HD-Puck"
+    }
+  },
+  "Italian": {
+    "code": "it-IT",
+    "voices": {
+      "Aoede": "it-IT-Chirp3-HD-Aoede",
+      "Kore": "it-IT-Chirp3-HD-Kore",
+      "Leda": "it-IT-Chirp3-HD-Leda",
+      "Zephyr": "it-IT-Chirp3-HD-Zephyr",
+      "Charon": "it-IT-Chirp3-HD-Charon",
+      "Fenrir": "it-IT-Chirp3-HD-Fenrir",
+      "Orus": "it-IT-Chirp3-HD-Orus",
+      "Puck": "it-IT-Chirp3-HD-Puck"
+    }
+  },
+  "Japanese": {
+    "code": "ja-JP",
+    "voices": {
+      "Aoede": "ja-JP-Chirp3-HD-Aoede",
+      "Kore": "ja-JP-Chirp3-HD-Kore",
+      "Leda": "ja-JP-Chirp3-HD-Leda",
+      "Zephyr": "ja-JP-Chirp3-HD-Zephyr",
+      "Charon": "ja-JP-Chirp3-HD-Charon",
+      "Fenrir": "ja-JP-Chirp3-HD-Fenrir",
+      "Orus": "ja-JP-Chirp3-HD-Orus",
+      "Puck": "ja-JP-Chirp3-HD-Puck"
+    }
+  },
+  "Kannada-IN": {
+    "code": "kn-IN",
+    "voices": {
+      "Aoede": "kn-IN-Chirp3-HD-Aoede",
+      "Kore": "kn-IN-Chirp3-HD-Kore",
+      "Leda": "kn-IN-Chirp3-HD-Leda",
+      "Zephyr": "kn-IN-Chirp3-HD-Zephyr",
+      "Charon": "kn-IN-Chirp3-HD-Charon",
+      "Fenrir": "kn-IN-Chirp3-HD-Fenrir",
+      "Orus": "kn-IN-Chirp3-HD-Orus",
+      "Puck": "kn-IN-Chirp3-HD-Puck"
     }
   },
   "Korean": {
@@ -305,10 +201,23 @@
       "Kore": "ko-KR-Chirp3-HD-Kore",
       "Leda": "ko-KR-Chirp3-HD-Leda",
       "Zephyr": "ko-KR-Chirp3-HD-Zephyr",
-      "Puck": "ko-KR-Chirp3-HD-Puck",
       "Charon": "ko-KR-Chirp3-HD-Charon",
       "Fenrir": "ko-KR-Chirp3-HD-Fenrir",
-      "Orus": "ko-KR-Chirp3-HD-Orus"
+      "Orus": "ko-KR-Chirp3-HD-Orus",
+      "Puck": "ko-KR-Chirp3-HD-Puck"
+    }
+  },
+  "Malayalam-IN": {
+    "code": "ml-IN",
+    "voices": {
+      "Aoede": "ml-IN-Chirp3-HD-Aoede",
+      "Kore": "ml-IN-Chirp3-HD-Kore",
+      "Leda": "ml-IN-Chirp3-HD-Leda",
+      "Zephyr": "ml-IN-Chirp3-HD-Zephyr",
+      "Charon": "ml-IN-Chirp3-HD-Charon",
+      "Fenrir": "ml-IN-Chirp3-HD-Fenrir",
+      "Orus": "ml-IN-Chirp3-HD-Orus",
+      "Puck": "ml-IN-Chirp3-HD-Puck"
     }
   },
   "Mandarin": {
@@ -318,10 +227,10 @@
       "Kore": "cmn-CN-Chirp3-HD-Kore",
       "Leda": "cmn-CN-Chirp3-HD-Leda",
       "Zephyr": "cmn-CN-Chirp3-HD-Zephyr",
-      "Puck": "cmn-CN-Chirp3-HD-Puck",
       "Charon": "cmn-CN-Chirp3-HD-Charon",
       "Fenrir": "cmn-CN-Chirp3-HD-Fenrir",
-      "Orus": "cmn-CN-Chirp3-HD-Orus"
+      "Orus": "cmn-CN-Chirp3-HD-Orus",
+      "Puck": "cmn-CN-Chirp3-HD-Puck"
     }
   },
   "Polish": {
@@ -331,10 +240,23 @@
       "Kore": "pl-PL-Chirp3-HD-Kore",
       "Leda": "pl-PL-Chirp3-HD-Leda",
       "Zephyr": "pl-PL-Chirp3-HD-Zephyr",
-      "Puck": "pl-PL-Chirp3-HD-Puck",
       "Charon": "pl-PL-Chirp3-HD-Charon",
       "Fenrir": "pl-PL-Chirp3-HD-Fenrir",
-      "Orus": "pl-PL-Chirp3-HD-Orus"
+      "Orus": "pl-PL-Chirp3-HD-Orus",
+      "Puck": "pl-PL-Chirp3-HD-Puck"
+    }
+  },
+  "Portuguese": {
+    "code": "pt-BR",
+    "voices": {
+      "Aoede": "pt-BR-Chirp3-HD-Aoede",
+      "Kore": "pt-BR-Chirp3-HD-Kore",
+      "Leda": "pt-BR-Chirp3-HD-Leda",
+      "Zephyr": "pt-BR-Chirp3-HD-Zephyr",
+      "Charon": "pt-BR-Chirp3-HD-Charon",
+      "Fenrir": "pt-BR-Chirp3-HD-Fenrir",
+      "Orus": "pt-BR-Chirp3-HD-Orus",
+      "Puck": "pt-BR-Chirp3-HD-Puck"
     }
   },
   "Russian": {
@@ -344,10 +266,62 @@
       "Kore": "ru-RU-Chirp3-HD-Kore",
       "Leda": "ru-RU-Chirp3-HD-Leda",
       "Zephyr": "ru-RU-Chirp3-HD-Zephyr",
-      "Puck": "ru-RU-Chirp3-HD-Puck",
       "Charon": "ru-RU-Chirp3-HD-Charon",
       "Fenrir": "ru-RU-Chirp3-HD-Fenrir",
-      "Orus": "ru-RU-Chirp3-HD-Orus"
+      "Orus": "ru-RU-Chirp3-HD-Orus",
+      "Puck": "ru-RU-Chirp3-HD-Puck"
+    }
+  },
+  "Spanish-ES": {
+    "code": "es-ES",
+    "voices": {
+      "Aoede": "es-ES-Chirp3-HD-Aoede",
+      "Kore": "es-ES-Chirp3-HD-Kore",
+      "Leda": "es-ES-Chirp3-HD-Leda",
+      "Zephyr": "es-ES-Chirp3-HD-Zephyr",
+      "Charon": "es-ES-Chirp3-HD-Charon",
+      "Fenrir": "es-ES-Chirp3-HD-Fenrir",
+      "Orus": "es-ES-Chirp3-HD-Orus",
+      "Puck": "es-ES-Chirp3-HD-Puck"
+    }
+  },
+  "Spanish-MX": {
+    "code": "es-US",
+    "voices": {
+      "Aoede": "es-US-Chirp3-HD-Aoede",
+      "Kore": "es-US-Chirp3-HD-Kore",
+      "Leda": "es-US-Chirp3-HD-Leda",
+      "Zephyr": "es-US-Chirp3-HD-Zephyr",
+      "Charon": "es-US-Chirp3-HD-Charon",
+      "Fenrir": "es-US-Chirp3-HD-Fenrir",
+      "Orus": "es-US-Chirp3-HD-Orus",
+      "Puck": "es-US-Chirp3-HD-Puck"
+    }
+  },
+  "Tamil-IN": {
+    "code": "ta-IN",
+    "voices": {
+      "Aoede": "ta-IN-Chirp3-HD-Aoede",
+      "Kore": "ta-IN-Chirp3-HD-Kore",
+      "Leda": "ta-IN-Chirp3-HD-Leda",
+      "Zephyr": "ta-IN-Chirp3-HD-Zephyr",
+      "Charon": "ta-IN-Chirp3-HD-Charon",
+      "Fenrir": "ta-IN-Chirp3-HD-Fenrir",
+      "Orus": "ta-IN-Chirp3-HD-Orus",
+      "Puck": "ta-IN-Chirp3-HD-Puck"
+    }
+  },
+  "Telugu-IN": {
+    "code": "te-IN",
+    "voices": {
+      "Aoede": "te-IN-Chirp3-HD-Aoede",
+      "Kore": "te-IN-Chirp3-HD-Kore",
+      "Leda": "te-IN-Chirp3-HD-Leda",
+      "Zephyr": "te-IN-Chirp3-HD-Zephyr",
+      "Charon": "te-IN-Chirp3-HD-Charon",
+      "Fenrir": "te-IN-Chirp3-HD-Fenrir",
+      "Orus": "te-IN-Chirp3-HD-Orus",
+      "Puck": "te-IN-Chirp3-HD-Puck"
     }
   },
   "Thai": {
@@ -357,10 +331,36 @@
       "Kore": "th-TH-Chirp3-HD-Kore",
       "Leda": "th-TH-Chirp3-HD-Leda",
       "Zephyr": "th-TH-Chirp3-HD-Zephyr",
-      "Puck": "th-TH-Chirp3-HD-Puck",
       "Charon": "th-TH-Chirp3-HD-Charon",
       "Fenrir": "th-TH-Chirp3-HD-Fenrir",
-      "Orus": "th-TH-Chirp3-HD-Orus"
+      "Orus": "th-TH-Chirp3-HD-Orus",
+      "Puck": "th-TH-Chirp3-HD-Puck"
+    }
+  },
+  "Turkish": {
+    "code": "tr-TR",
+    "voices": {
+      "Aoede": "tr-TR-Chirp3-HD-Aoede",
+      "Kore": "tr-TR-Chirp3-HD-Kore",
+      "Leda": "tr-TR-Chirp3-HD-Leda",
+      "Zephyr": "tr-TR-Chirp3-HD-Zephyr",
+      "Charon": "tr-TR-Chirp3-HD-Charon",
+      "Fenrir": "tr-TR-Chirp3-HD-Fenrir",
+      "Orus": "tr-TR-Chirp3-HD-Orus",
+      "Puck": "tr-TR-Chirp3-HD-Puck"
+    }
+  },
+  "Vietnamese": {
+    "code": "vi-VN",
+    "voices": {
+      "Aoede": "vi-VN-Chirp3-HD-Aoede",
+      "Kore": "vi-VN-Chirp3-HD-Kore",
+      "Leda": "vi-VN-Chirp3-HD-Leda",
+      "Zephyr": "vi-VN-Chirp3-HD-Zephyr",
+      "Charon": "vi-VN-Chirp3-HD-Charon",
+      "Fenrir": "vi-VN-Chirp3-HD-Fenrir",
+      "Orus": "vi-VN-Chirp3-HD-Orus",
+      "Puck": "vi-VN-Chirp3-HD-Puck"
     }
   }
 }
