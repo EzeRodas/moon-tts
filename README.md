@@ -32,6 +32,8 @@ The usage statistics reset automatically every month.
 
 >Before anything please read [Considerations](#considerations).
 
+The program can be downloaded at the "Releases" section of this repository, after that proceed with the credentials set-up.
+
 First you'll need a Google Cloud account. Just click on the next link and set it up with your regular Google account.
 
 - https://console.developers.google.com/apis/dashboard
@@ -52,7 +54,7 @@ The only thing left is to open Moon TTS, click on select credentials and point t
 
 First of all, I have no idea what I'm doing and barely know how to code, this is just an amalgamation of tutorials I saw somewhere in youtube and questions I asked to Copilot, combined into a couple of weeks of banging my head against it. I just needed something for a friend of mine, but if it helps someone else then great.
 
-I'm open to any kind of suggestion improve the program, and any feedback idea will be greatly appreciated.
+I'm open to any kind of suggestion improve the program, and any feedback or idea will be greatly appreciated.
 
 Also, <ins>very important</ins>, if you try to run the .exe file it ***WILL BE FLAGGED AS SUSPICIOUS*** by Windows. I do not have the money to spend on a license neither a company certification to sign it, so I can't do anything about it.\
 If you don't trust the .exe, feel free to download the full source code that you can completely read and execute it yourself.
