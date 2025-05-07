@@ -10,7 +10,7 @@ from utils import resource_path, get_audio_devices
 class MoonTTSApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Moon TTS v0.1")
+        self.root.title("Moon TTS v1.0.0")
         self.root.geometry("400x570")
         self.root.resizable(False, False)
         self.root.iconbitmap(resource_path("assets\\icon.ico"))

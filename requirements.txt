@@ -1,0 +1,7 @@
+customtkinter
+tkinter
+pillow
+google-cloud-texttospeech
+sounddevice
+soundfile
+CTkMessagebox

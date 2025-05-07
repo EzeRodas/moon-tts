@@ -14,63 +14,68 @@ class TTSWorker:
         self._last_voice = None
         self._last_audio_path = None
         self._last_volume = None
+        self._playback_lock = threading.Lock()  # Ensure only one playback at a time
 
     def synthesize_and_play(self, text, lang, voice, output_device, monitor_device=None, volume=1.0):
-        cache_hit = (
-            self._last_text == text and
-            self._last_language == lang and
-            self._last_voice == voice and
-            os.path.exists(self._last_audio_path)
-        )
-        if cache_hit:
-            # Only reapply volume if changed
-            data, fs = sf.read(self._last_audio_path, dtype='float32')
-            data = data * float(volume)
-            self._play_with_progress(data, fs, output_device, monitor_device, text_len=len(text), count_characters=False)
-            self._last_volume = volume
-            return
-
-        try:
-            cred_path = self.app.settings.google_api_json
-            os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = cred_path
-            client = texttospeech.TextToSpeechClient()
-
-            lang_code = self.app.voice_data[lang]["code"]
-            voice_id = self.app.voice_data[lang]["voices"][voice]
-
-            input_text = texttospeech.SynthesisInput(text=text)
-            voice_params = texttospeech.VoiceSelectionParams(
-                language_code=lang_code,
-                name=voice_id,
+        with self._playback_lock:
+            cache_hit = (
+                self._last_text == text and
+                self._last_language == lang and
+                self._last_voice == voice and
+                os.path.exists(self._last_audio_path)
             )
-            audio_config = texttospeech.AudioConfig(audio_encoding=texttospeech.AudioEncoding.LINEAR16)
+            if cache_hit:
+                data, fs = sf.read(self._last_audio_path, dtype='float32')
+                data = data * float(volume)
+                # Stop any previous playback before starting new one
+                sd.stop()
+                self._play_with_progress(data, fs, output_device, monitor_device, text_len=len(text), count_characters=False)
+                self._last_volume = volume
+                return
 
-            response = client.synthesize_speech(
-                input=input_text,
-                voice=voice_params,
-                audio_config=audio_config,
-            )
+            try:
+                cred_path = self.app.settings.google_api_json
+                os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = cred_path
+                client = texttospeech.TextToSpeechClient()
 
-            output_path = os.path.join(get_appdata_folder(), "output.wav")
-            with open(output_path, "wb") as out:
-                out.write(response.audio_content)
+                lang_code = self.app.voice_data[lang]["code"]
+                voice_id = self.app.voice_data[lang]["voices"][voice]
 
-            data, fs = sf.read(output_path, dtype='float32')
-            data = data * float(volume)  # Apply volume
+                input_text = texttospeech.SynthesisInput(text=text)
+                voice_params = texttospeech.VoiceSelectionParams(
+                    language_code=lang_code,
+                    name=voice_id,
+                )
+                audio_config = texttospeech.AudioConfig(audio_encoding=texttospeech.AudioEncoding.LINEAR16)
 
-            # Update cache
-            self._last_text = text
-            self._last_language = lang
-            self._last_voice = voice
-            self._last_audio_path = output_path
-            self._last_volume = volume
+                response = client.synthesize_speech(
+                    input=input_text,
+                    voice=voice_params,
+                    audio_config=audio_config,
+                )
 
-            self._play_with_progress(data, fs, output_device, monitor_device, text_len=len(text), count_characters=True)
-        except Exception as e:
-            self.app.root.after(0, lambda: self.app.speak_button.configure(state="normal", text="Speak"))
-            self.app.root.after(0, lambda: self.app.progress_var.set(0.0))
-            from tkinter import messagebox
-            self.app.root.after(0, lambda: messagebox.showerror("TTS Error", f"Error: {e}"))
+                output_path = os.path.join(get_appdata_folder(), "output.wav")
+                with open(output_path, "wb") as out:
+                    out.write(response.audio_content)
+
+                data, fs = sf.read(output_path, dtype='float32')
+                data = data * float(volume)  # Apply volume
+
+                # Update cache
+                self._last_text = text
+                self._last_language = lang
+                self._last_voice = voice
+                self._last_audio_path = output_path
+                self._last_volume = volume
+
+                # Stop any previous playback before starting new one
+                sd.stop()
+                self._play_with_progress(data, fs, output_device, monitor_device, text_len=len(text), count_characters=True)
+            except Exception as e:
+                self.app.root.after(0, lambda: self.app.speak_button.configure(state="normal", text="Speak"))
+                self.app.root.after(0, lambda: self.app.progress_var.set(0.0))
+                from tkinter import messagebox
+                self.app.root.after(0, lambda: messagebox.showerror("TTS Error", f"Error: {e}"))
 
     def _play_with_progress(self, data, fs, output_device, monitor_device, text_len, count_characters):
         duration = len(data) / fs
@@ -79,6 +84,8 @@ class TTSWorker:
         mon_idx = device_indices.get(monitor_device) if monitor_device else None
 
         def playback(dev_idx):
+            # Stop any previous playback on this device before playing
+            sd.stop()
             sd.play(data, fs, device=dev_idx)
             sd.wait()
 
