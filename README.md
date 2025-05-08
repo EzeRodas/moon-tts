@@ -32,7 +32,9 @@ The usage statistics reset automatically every month.
 
 > Before anything, please read [Considerations](#considerations).
 
-First, you'll need a Google Cloud account. Just click the following link and set it up with your regular Google account:
+The program can be downloaded at the "Releases" section of this repository, after that proceed with the credentials set-up.
+
+First you'll need a Google Cloud account. Just click on the next link and set it up with your regular Google account.
 
 - https://console.developers.google.com/apis/dashboard
 
@@ -47,7 +49,8 @@ Once there, search for "***Cloud Text-to-Speech API***" (please do not confuse i
     You can check the free limits for each model here:\
     https://cloud.google.com/text-to-speech/pricing
 
-After that's done, return to the Cloud Text-to-Speech API page and enable it. Once enabled, you'll see a tab on the left labeled "***Credentials***". If it doesn't appear, look for a section called "***APIs and Services***". Inside, look for the third credentials option, "***Service account***", and create a new service account.
+After that's done, return to the Cloud Text-to-Speech API page and enable it.\
+Once enabled, you'll see a tab on the left labeled "***Credentials***". If it doesn't appear, look for a section called "***APIs and Services***". Inside, look for the third credentials option, "***Service account***", and create a new service account.
 
 <picture><source srcset="readme assets/example1.png"/><img src="readme assets/example1.png" alt="Example instructions"/></picture>
 <picture><source srcset="readme assets/example2.png"/><img src="readme assets/example2.png" alt="Example instructions"/></picture>
