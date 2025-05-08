@@ -2,8 +2,10 @@ import sounddevice as sd
 import soundfile as sf
 import os
 import threading
+from CTkMessagebox import CTkMessagebox
 from google.cloud import texttospeech
-from utils import resource_path, get_appdata_folder
+from utils import get_appdata_folder
+
 
 class TTSWorker:
     def __init__(self, app):
@@ -77,22 +79,37 @@ class TTSWorker:
                 from tkinter import messagebox
                 self.app.root.after(0, lambda: messagebox.showerror("TTS Error", f"Error: {e}"))
 
+    
     def _play_with_progress(self, data, fs, output_device, monitor_device, text_len, count_characters):
         duration = len(data) / fs
         device_indices = self.app.device_indices
         main_idx = device_indices.get(output_device)
         mon_idx = device_indices.get(monitor_device) if monitor_device else None
 
+        def is_valid_output_device(dev_idx):
+            try:
+                info = sd.query_devices(dev_idx)
+                return info['max_output_channels'] > 0
+            except Exception:
+                return False
+
         def playback(dev_idx):
-            # Stop any previous playback on this device before playing
-            sd.stop()
-            sd.play(data, fs, device=dev_idx)
-            sd.wait()
+            try:
+                sd.stop()
+                sd.play(data, fs, device=dev_idx)
+                sd.wait()
+            except Exception as e:
+                self.app.root.after(0, lambda: CTkMessagebox(
+                    title="Playback Error",
+                    message=f"Playback failed on device {dev_idx}: {e}",
+                    icon="cancel",
+                    master=self.app.root
+                ))
 
         threads = []
-        if main_idx is not None:
+        if main_idx is not None and is_valid_output_device(main_idx):
             threads.append(threading.Thread(target=playback, args=(main_idx,)))
-        if mon_idx is not None:
+        if mon_idx is not None and is_valid_output_device(mon_idx):
             threads.append(threading.Thread(target=playback, args=(mon_idx,)))
         for t in threads:
             t.start()

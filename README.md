@@ -36,7 +36,7 @@ The program can be downloaded at the "Releases" section of this repository, afte
 
 First you'll need a Google Cloud account. Just click on the next link and set it up with your regular Google account.
 
-- https://console.developers.google.com/apis/dashboard
+- [APIs & Services - Google Cloud](https://console.developers.google.com/apis/dashboard)
 
 Once there, search for "***Cloud Text-to-Speech API***" (please do not confuse it with Speech-To-Text), and select "***Enable***".
 
@@ -47,7 +47,7 @@ Once there, search for "***Cloud Text-to-Speech API***" (please do not confuse i
     At this point, you'll be asked to set up a billing account for Google Cloud's services. This **DOES NOT** mean that you'll be charged, but it is necessary for API usage. Unfortunately, if you don't have a credit/debit card, you won't be able to continue. (An API is like a personal key that Google provides, to know who is using its services)
 
     You can check the free limits for each model here:\
-    https://cloud.google.com/text-to-speech/pricing
+    [Review pricing for Text-To-speech | Google Cloud](https://cloud.google.com/text-to-speech/pricing)
 
 After that's done, return to the Cloud Text-to-Speech API page and enable it.\
 Once enabled, you'll see a tab on the left labeled "***Credentials***". If it doesn't appear, look for a section called "***APIs and Services***". Inside, look for the third credentials option, "***Service account***", and create a new service account.
@@ -67,6 +67,8 @@ After it's created, click on your new service account, go to Keys, click New Key
 > Bear in mind that these credentials are personal and should **NOT** be shared with anyone.
 
 The only thing left is to open Moon TTS, click "Select Credentials," point to the JSON file you just downloaded, and it should be ready to use.
+
+If you don't have any virtual cables installed I recommend [VB Cable](https://vb-audio.com/Cable/VirtualCables.htm). It's simple, free, and it works.
 
 # Considerations
 
