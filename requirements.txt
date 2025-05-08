@@ -5,3 +5,4 @@ google-cloud-texttospeech
 sounddevice
 soundfile
 CTkMessagebox
+numpy
