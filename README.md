@@ -53,12 +53,15 @@ After that's done, return to the Cloud Text-to-Speech API page and enable it.\
 Once enabled, you'll see a tab on the left labeled "***Credentials***". If it doesn't appear, look for a section called "***APIs and Services***". Inside, look for the third credentials option, "***Service account***", and create a new service account.
 
 <picture><source srcset="readme assets/example1.png"/><img src="readme assets/example1.png" alt="Example instructions"/></picture>
+
 <picture><source srcset="readme assets/example2.png"/><img src="readme assets/example2.png" alt="Example instructions"/></picture>
 
 After it's created, click on your new service account, go to Keys, click New Key, select ***JSON*** format, and download it.
 
 <picture><source srcset="readme assets/example3.png"/><img src="readme assets/example3.png" alt="Example instructions"/></picture>
+
 <picture><source srcset="readme assets/example4.png"/><img src="readme assets/example4.png" alt="Example instructions"/></picture>
+
 <picture><source srcset="readme assets/example5.png"/><img src="readme assets/example5.png" alt="Example instructions"/></picture>
 
 > Bear in mind that these credentials are personal and should **NOT** be shared with anyone.
